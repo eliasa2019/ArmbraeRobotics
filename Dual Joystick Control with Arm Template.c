@@ -30,7 +30,7 @@ task main()
 	while(true)
 	{
 		//Driving Motor Control
-		motor[leftMotor] = vexRT[Ch3]);
+		motor[leftMotor] = vexRT[Ch3];
 		motor[rightMotor] = vexRT[Ch2];
 
 		//Arm Control
