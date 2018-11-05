@@ -30,8 +30,8 @@ task main()
 	while(true)
 	{
 		//Driving Motor Control
-		motor[leftMotor] = 3*(vexRT[Ch3]) / 5;
-		motor[rightMotor] = 3*(vexRT[Ch2]) / 5;
+		motor[leftMotor] = vexRT[Ch3]);
+		motor[rightMotor] = vexRT[Ch2];
 
 		//Arm Control
 		if(vexRT[Btn6U] == 1)
