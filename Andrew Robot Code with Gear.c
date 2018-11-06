@@ -59,9 +59,9 @@ task main()
 		*a value of 0 or 1 (true or false). 0 is the lower gear and 1 is the higher. These if statements
 		*change the gear between the two when button 8R is pressed. See void function changeGear().
 		*/
-		if(vexRT[Btn8U] == 1 && gear++ < ARRAYSIZE(speeds))
+		if(vexRT[Btn8U] == 1 && gear++ <= ARRAYSIZE(speeds))
 			gear++;
-		if(vexRT[Btn8D] == 1 && gear-- > 0)
+		if(vexRT[Btn8D] == 1 && gear-- >= 0)
 			gear--;
 	}
 }
