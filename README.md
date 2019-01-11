@@ -24,7 +24,7 @@ These steps, along with much more information on the VexNET system, can be found
 
 Additional resources
 ----
-The RobotC IDE is dowloadable from the [Vex EDR website](https://www.vexrobotics.com/robotc-vexedr-vexiq.html) and the C standard library is dowloadable from the [GNU website](https://www.gnu.org/software/libc/) in case you need it. The RobotC programming language is heavily based on C, though most features you may need to program for the robot can be easily implemented with a background in any programming language.
+The RobotC IDE is dowloadable from the [Vex EDR website](https://www.vexrobotics.com/robotc-vexedr-vexiq.html). The RobotC programming language is heavily based on C, though most features you may need to program for the robot can be easily implemented with a background in any programming language.
 
 RobotC tips and tricks
 ----
