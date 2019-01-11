@@ -10,10 +10,12 @@
 #define ARRAYSIZE(a) sizeof(a)/sizeof(a[0])
 
 //ADD NEW SPEEDS BETWEEN CURLY BRACES BELOW, ORDERED BY MAGNITUDE
-const float speeds[] = {0.6,1.5};
+//(Remember array indices start at 0; the first item in speeds is speeds[0], not speeds[1])
+const float speeds[] = {0.6,1.5,3.0};
 
 //This variable defines which element in array speeds[] is selected. See "Motor control" below.
-byte gear = 0;
+//The value given to gear is which gear it is switched to first
+byte gear = 1;
 
 task main()
 {
@@ -64,13 +66,13 @@ task main()
 		 * This part of the program changes the speed of the robot. When the button 8U is pressed, the program tests whether
 		 * the next gear is equal to the length of array speeds[]. If so, you cant increment gear.
 		 */
-		if(vexRT[Btn8U] == 1 && gear < ARRAYSIZE(speeds) - 1) {
+		if(vexRT[Btn8U] == 1 && gear < ARRAYSIZE(speeds) - 1) { // If gear is less than maximum index in speeds
 			++gear;
-			sleep(500);
+			sleep(100);
 		}
 		if(vexRT[Btn8D] == 1 && gear > 0) {
 			--gear;
-			sleep(500);
+			sleep(100);
 		}
 	}
 }
